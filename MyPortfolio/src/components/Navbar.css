@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+/* General body style */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-top: 60px; /* Space for fixed navbar */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed; /* Keep navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background color */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding inside the navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    z-index: 1000; /* Ensure navbar is above other content */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 1.8rem; /* Logo font size */
+    color: #fff; /* Logo text color */
+    text-transform: uppercase; /* Uppercase letters */
+  }
+  
+  /* Navbar links */
+  .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+  }
+  
+  /* Links inside the navbar */
+  .nav-links li {
+    margin: 0 15px; /* Space between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Link color */
+    font-size: 1rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Hover effect for links */
+  .nav-links a:hover {
+    color: #00b4d8; /* Change color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links on small screens */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Position links absolutely */
+      top: 60px; /* Below the navbar */
+      left: 0; /* Align left */
+      width: 100%; /* Full width */
+      background-color: #333; /* Background color */
+      padding: 10px 0; /* Padding */
+      z-index: 999; /* Above other content */
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show links when open */
+    }
+  
+    /* Hamburger icon styles */
+    .nav-toggle {
+      display: block; /* Show hamburger on small screens */
+      cursor: pointer; /* Pointer cursor */
+      color: #fff; /* Color */
+      font-size: 1.8rem; /* Size */
+    }
+  }
+  

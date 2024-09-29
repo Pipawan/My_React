@@ -1,0 +1,61 @@
+.home-container {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: #f0f4f8; /* Light background color */
+    padding: 50px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Limit maximum width */
+    margin: auto; /* Center the container */
+    text-align: center; /* Center text */
+  }
+  
+  .welcome-message {
+    font-size: 2.5rem; /* Larger font size for welcome message */
+    color: #333; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the welcome message */
+  }
+  
+  .intro {
+    font-size: 1.2rem; /* Slightly larger font size for intro */
+    color: #555; /* Gray color for the text */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 30px; /* Space below the intro paragraph */
+  }
+  
+  .specialties {
+    margin-bottom: 30px; /* Space below specialties section */
+  }
+  
+  .specialties h2 {
+    font-size: 2rem; /* Font size for the specialties heading */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .specialties ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .specialties li {
+    font-size: 1.1rem; /* Font size for list items */
+    color: #555; /* Gray color for the list items */
+    margin: 5px 0; /* Space between list items */
+  }
+  
+  .explore-button {
+    display: inline-block; /* Make the link look like a button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007bff; /* Blue background for the button */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .explore-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

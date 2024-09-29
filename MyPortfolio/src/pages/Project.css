@@ -1,0 +1,75 @@
+/* Project.css */
+
+/* General container styles */
+.projects-container {
+    max-width: 1200px; /* Sets a maximum width for the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds padding around the container */
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Title styles */
+.projects-title {
+    text-align: center; /* Centers the title */
+    font-size: 2.5rem; /* Increases the font size */
+    margin-bottom: 30px; /* Space below the title */
+    color: #333; /* Dark text color */
+}
+
+/* Individual project card styles */
+.project-card {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    background: white; /* White background for project cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between project cards */
+    overflow: hidden; /* Hides overflow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Image styles */
+.project-image {
+    width: 300px; /* Fixed width for images */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 8px 0 0 8px; /* Rounded corners on the left */
+}
+
+/* Project info styles */
+.project-info {
+    padding: 20px; /* Padding inside project info */
+    flex: 1; /* Takes remaining space */
+}
+
+/* Project name styles */
+.project-name {
+    font-size: 1.8rem; /* Font size for project name */
+    margin: 0; /* Removes default margin */
+    color: #007BFF; /* Blue color for project name */
+}
+
+/* Description styles */
+.project-description {
+    font-size: 1rem; /* Font size for description */
+    margin: 10px 0; /* Space above and below */
+    color: #555; /* Darker gray for description text */
+}
+
+/* Link styles */
+.project-link {
+    display: inline-block; /* Allows padding around link */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 15px; /* Padding around the link */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+/* Link hover effect */
+.project-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

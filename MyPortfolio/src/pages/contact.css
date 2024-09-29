@@ -1,0 +1,112 @@
+/* Main container to center everything */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f4f4f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Title */
+  .contact-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Contact Information Panel */
+  .contact-info-panel {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info-panel h2 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info-panel p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px; /* Space between form elements */
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust the height of the text area */
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    padding: 15px 30px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+  }
+  
+  .submit-button:hover {
+    background-color: #4c4ab8;
+  }
+  
+  /* Media query for better spacing on larger screens */
+  @media (min-width: 768px) {
+    .contact-container {
+      padding: 40px;
+    }
+  
+    .contact-form {
+      gap: 25px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 15px;
+    }
+  
+    .submit-button {
+      font-size: 20px;
+    }
+  }
+  

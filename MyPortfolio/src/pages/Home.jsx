@@ -4,7 +4,7 @@ const Home = () => {
       <div className="home-container">
         <h1 className="welcome-message">Welcome to My Portfolio</h1>
         <p className="intro">
-          Hi, I'm Pawan, a Software Engineer and Backend Specialist. I build 
+          Hi, I am Pawan, a Software Engineer and Backend Specialist. I build 
           efficient and user-friendly web applications that make a difference.
         </p>
         <div className="specialties">

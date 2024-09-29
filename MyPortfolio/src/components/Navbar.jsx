@@ -1,19 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import the CSS for the Navbar
-import logo from '../components//logo.png'; // Adjust the path based on where you place your logo
+import logo from '../components/logo.png'; // Adjust the path to your logo
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   return (
     <nav className="navbar">
-      <img src={logo} alt="MyPortfolio Logo" className="logo-image" /> {/* Logo image */}
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">
+        <img src={logo} alt="MyPortfolio Logo" className="logo-img" />
+      </div>
       <div className="nav-toggle" onClick={toggleMenu}>
         &#9776; {/* Hamburger icon */}
       </div>

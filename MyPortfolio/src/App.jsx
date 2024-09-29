@@ -3,19 +3,19 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
-import contact from './pages/contact';
-import Navbar from './components/Navbar'; // if you decide to have a Navbar component
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
     <Router>
-      <Navbar />  {/* Optional: Include if you have a Navbar component */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<contact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
